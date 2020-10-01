@@ -15,7 +15,8 @@ export const getStudentsInCohort = (cohort) => {
 // It should return an array of only the full time students
 
 export const getFullTimeStudents = () => {
-    const fulltimeStudents
+    const fulltimeStudents = students.filter(student => student.fullTime === true)
+    return fulltimeStudents
 }
 
 // Export a function called getStudentsByInstructorId
